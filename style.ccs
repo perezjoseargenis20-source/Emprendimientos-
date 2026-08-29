@@ -15,10 +15,10 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 25px 15px 0 15px;
+  padding: 25px 15px 40px 15px;
 }
 
-/* MARCA Y LOGO */
+/* CABECERA & LOGO */
 .logo-box {
   background: rgba(255, 255, 255, 0.95);
   padding: 10px;
@@ -27,24 +27,22 @@ body {
   align-items: center;
   justify-content: center;
   box-shadow: 0 10px 25px rgba(0,0,0,0.5);
-  max-width: 450px;
+  max-width: 420px;
   width: 90%;
-  overflow: hidden;
   border: 3px solid #ffffff;
 }
 
 .logo-img {
   width: 100%;
-  height: auto;
-  max-height: 220px;
+  max-height: 200px;
   object-fit: cover;
   border-radius: 12px;
 }
 
 .slogan-principal {
   color: #ffffff;
-  margin: 20px 0 25px 0;
-  font-size: 1.25rem;
+  margin: 15px 0 25px 0;
+  font-size: 1.2rem;
   font-style: italic;
   text-shadow: 2px 2px 8px rgba(0,0,0,0.8);
   text-align: center;
@@ -53,15 +51,14 @@ body {
 .titulo-seccion {
   color: #ffffff;
   font-size: 1.6rem;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
   text-align: center;
-  text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
 }
 
-/* TARJETAS DE PRODUCTOS */
+/* GALERÍA DE PRODUCTOS */
 .galeria-productos {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
   gap: 20px;
   width: 100%;
   max-width: 1200px;
@@ -74,14 +71,8 @@ body {
   padding: 12px;
   position: relative;
   box-shadow: 0 10px 25px rgba(0,0,0,0.5);
-  transition: transform 0.3s ease;
   display: flex;
   flex-direction: column;
-}
-
-.tarjeta-producto:hover {
-  transform: translateY(-5px);
-  background: #ffffff;
 }
 
 .etiqueta {
@@ -125,7 +116,6 @@ body {
 .info-producto h3 {
   font-size: 1.05rem;
   color: #1b4332;
-  margin-bottom: 4px;
 }
 
 .info-producto p {
@@ -135,7 +125,6 @@ body {
   flex: 1;
 }
 
-/* BOTONES DE LA TARJETA */
 .acciones-tarjeta {
   display: flex;
   gap: 8px;
@@ -151,7 +140,9 @@ body {
   font-size: 0.8rem;
   cursor: pointer;
   flex: 1;
-  transition: all 0.2s ease;
+  text-align: center;
+  user-select: none;
+  transition: background 0.2s;
 }
 
 .btn-detalle:hover {
@@ -170,14 +161,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: background 0.2s ease;
 }
 
-.btn-comprar:hover {
-  background: #40916c;
-}
-
-/* RESEÑAS */
+/* SECCIÓN DE RESEÑAS Y COMENTARIOS */
 .seccion-resenas {
   width: 100%;
   max-width: 1200px;
@@ -187,56 +173,119 @@ body {
 .subtitulo-resenas {
   color: #d8f3dc;
   text-align: center;
-  margin-top: -15px;
-  margin-bottom: 30px;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
+  margin-bottom: 25px;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.8);
 }
 
-.rejilla-resenas {
+.galeria-resenas {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 20px;
 }
 
 .tarjeta-resena {
-  background: rgba(255, 255, 255, 0.92);
+  background: rgba(255, 255, 255, 0.95);
   border-radius: 16px;
   padding: 20px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
 }
 
-.resena-cabecera {
+.cabecera-resena {
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 12px;
   margin-bottom: 12px;
 }
 
-.foto-usuario {
-  width: 50px;
-  height: 50px;
+.foto-cliente {
+  width: 48px;
+  height: 48px;
   border-radius: 50%;
   object-fit: cover;
   border: 2px solid #2d6a4f;
 }
 
-.resena-cabecera h4 {
-  font-size: 1rem;
+.datos-cliente h4 {
+  font-size: 0.95rem;
   color: #1b4332;
 }
 
 .estrellas {
-  color: #f59e0b;
-  font-size: 0.9rem;
+  color: #ffb703;
+  font-size: 0.85rem;
 }
 
-.texto-resena {
-  font-size: 0.88rem;
+.comentario-cliente {
+  font-size: 0.82rem;
   color: #444;
+  line-height: 1.4;
   font-style: italic;
 }
 
-/* VENTANA MODAL INTERACTIVA (POP-UP) */
+/* SECCIÓN DE DESPEDIDA Y RECOMENDACIÓN */
+.seccion-despedida {
+  width: 100%;
+  max-width: 1200px;
+  margin-bottom: 30px;
+}
+
+.caja-despedida {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+  padding: 30px 25px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  text-align: center;
+  border-top: 5px solid #2d6a4f;
+}
+
+.caja-despedida h3 {
+  color: #1b4332;
+  font-size: 1.4rem;
+  margin-bottom: 12px;
+}
+
+.texto-futuro {
+  color: #444;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  max-width: 850px;
+  margin: 0 auto 20px auto;
+}
+
+.texto-futuro strong {
+  color: #2d6a4f;
+}
+
+.tarjeta-recomendacion {
+  background: #d8f3dc;
+  border-left: 4px solid #1b4332;
+  padding: 15px 20px;
+  border-radius: 10px;
+  text-align: left;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.icono-destacado {
+  font-size: 1.4rem;
+  line-height: 1;
+}
+
+.tarjeta-recomendacion p {
+  color: #1b4332;
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+/* TRUCO CSS PARA VENTANAS EMERGENTES (MODALES SIN JS) */
+.modal-state {
+  display: none;
+}
+
 .modal-overlay {
   display: none;
   position: fixed;
@@ -244,84 +293,86 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.75);
   z-index: 100;
   justify-content: center;
   align-items: center;
   padding: 20px;
 }
 
+.modal-state:checked + .modal-overlay {
+  display: flex;
+}
+
 .modal-contenido {
   background: #ffffff;
-  padding: 25px;
+  padding: 20px;
   border-radius: 16px;
-  max-width: 450px;
+  max-width: 400px;
   width: 100%;
   position: relative;
   box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-  animation: aparecer 0.3s ease;
+  animation: abrir 0.3s ease-out;
 }
 
-@keyframes aparecer {
+@keyframes abrir {
   from { transform: scale(0.8); opacity: 0; }
   to { transform: scale(1); opacity: 1; }
 }
 
 .btn-cerrar {
   position: absolute;
-  top: 15px;
-  right: 20px;
-  font-size: 1.5rem;
+  top: 10px;
+  right: 15px;
+  font-size: 1.8rem;
   cursor: pointer;
   color: #888;
+  line-height: 1;
 }
 
-.btn-cerrar:hover {
-  color: #000;
+.modal-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 12px;
 }
 
 .modal-contenido h3 {
   color: #1b4332;
+  font-size: 1.2rem;
   margin-bottom: 10px;
+  text-align: center;
 }
 
-.linea-modal {
-  border: 0;
-  height: 2px;
-  background: #2d6a4f;
-  margin-bottom: 15px;
-}
-
-.modal-cuerpo p {
+.modal-info p {
   color: #333;
-  font-size: 0.9rem;
-  margin-bottom: 12px;
+  font-size: 0.85rem;
+  margin-bottom: 8px;
   line-height: 1.4;
 }
 
 .precio-destacado {
   color: #2d6a4f;
   font-weight: 700;
-  font-size: 1.05rem;
 }
 
 .btn-cerrar-modal {
+  display: block;
   width: 100%;
   background: #1b4332;
   color: #fff;
   border: none;
-  padding: 10px;
+  padding: 10px 0;
   border-radius: 8px;
   font-weight: 700;
   margin-top: 10px;
   cursor: pointer;
+  text-align: center;
+  user-select: none;
 }
 
-.btn-cerrar-modal:hover {
-  background: #40916c;
-}
-
-/* BOTÓN WHATSAPP & FOOTER */
+/* BOTÓN WHATSAPP */
 .btn-whatsapp {
   position: fixed;
   bottom: 20px;
@@ -340,19 +391,4 @@ body {
 .btn-whatsapp svg {
   width: 30px;
   height: 30px;
-}
-
-.pie-pagina {
-  margin-top: auto;
-  width: 100vw;
-  background: rgba(15, 32, 22, 0.95);
-  padding: 20px 15px;
-  text-align: center;
-  border-top: 3px solid #2d6a4f;
-}
-
-.frase-motivacional {
-  color: #b7e4c7;
-  font-style: italic;
-  font-size: 0.95rem;
 }
