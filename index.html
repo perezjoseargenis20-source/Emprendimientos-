@@ -29,7 +29,6 @@
         <h3>Ensalada Mixta Familiar</h3>
         <p>Hortalizas crujientes para compartir en la mesa.</p>
         <div class="acciones-tarjeta">
-          <!-- Botón que activa la casilla de control 1 -->
           <label for="modal-toggle-1" class="btn-detalle">Ver Detalle</label>
           <a href="https://wa.me/50583886135?text=Hola,%20quiero%20pedir%20Ensalada%20Mixta" target="_blank" class="btn-comprar">Comprar</a>
         </div>
@@ -46,7 +45,6 @@
         <h3>Tomates Premium</h3>
         <p>Jugosos, rojos y 100% orgánicos.</p>
         <div class="acciones-tarjeta">
-          <!-- Botón que activa la casilla de control 2 -->
           <label for="modal-toggle-2" class="btn-detalle">Ver Detalle</label>
           <a href="https://wa.me/50583886135?text=Hola,%20quiero%20pedir%20Tomates%20Premium" target="_blank" class="btn-comprar">Comprar</a>
         </div>
@@ -63,7 +61,6 @@
         <h3>Bowl Nutritivo</h3>
         <p>Hojas verdes preparadas para tu día.</p>
         <div class="acciones-tarjeta">
-          <!-- Botón que activa la casilla de control 3 -->
           <label for="modal-toggle-3" class="btn-detalle">Ver Detalle</label>
           <a href="https://wa.me/50583886135?text=Hola,%20quiero%20pedir%20Bowl%20Nutritivo" target="_blank" class="btn-comprar">Comprar</a>
         </div>
@@ -80,7 +77,6 @@
         <h3>Lechuga Hidropónica</h3>
         <p>Frescura garantizada del cultivo.</p>
         <div class="acciones-tarjeta">
-          <!-- Botón que activa la casilla de control 4 -->
           <label for="modal-toggle-4" class="btn-detalle">Ver Detalle</label>
           <a href="https://wa.me/50583886135?text=Hola,%20quiero%20pedir%20Lechuga" target="_blank" class="btn-comprar">Comprar</a>
         </div>
@@ -89,9 +85,67 @@
 
   </main>
 
-  <!-- ========================================================== -->
-  <!-- SISTEMA DE MODALES (100% PURA MAGIA CSS SIN JAVASCRIPT) -->
-  <!-- ========================================================== -->
+  <!-- SECCIÓN DE RESEÑAS Y COMENTARIOS DE CLIENTES -->
+  <section class="seccion-resenas">
+    <h2 class="titulo-seccion">Opiniones de Nuestros Clientes</h2>
+    <p class="subtitulo-resenas">Lo que dicen las familias que consumen nuestros productos</p>
+
+    <div class="galeria-resenas">
+      
+      <!-- Reseña 1 -->
+      <div class="tarjeta-resena">
+        <div class="cabecera-resena">
+          <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=150&q=80" alt="Cliente Mariana" class="foto-cliente">
+          <div class="datos-cliente">
+            <h4>Mariana Gutiérrez</h4>
+            <div class="estrellas">★★★★★</div>
+          </div>
+        </div>
+        <p class="comentario-cliente">"La lechuga hidropónica dura muchísimo más tiempo en la refrigeradora que la de los supermercados. La calidad y frescura se notan desde el primer bocado."</p>
+      </div>
+
+      <!-- Reseña 2 -->
+      <div class="tarjeta-resena">
+        <div class="cabecera-resena">
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80" alt="Cliente Carlos" class="foto-cliente">
+          <div class="datos-cliente">
+            <h4>Carlos Mendoza</h4>
+            <div class="estrellas">★★★★★</div>
+          </div>
+        </div>
+        <p class="comentario-cliente">"Hago el pedido directo por WhatsApp y me llega rápido. Los tomates tienen un sabor increíble, súper recomendados para las ensaladas."</p>
+      </div>
+
+      <!-- Reseña 3 -->
+      <div class="tarjeta-resena">
+        <div class="cabecera-resena">
+          <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=150&q=80" alt="Cliente Sofía" class="foto-cliente">
+          <div class="datos-cliente">
+            <h4>Sofía Ramos</h4>
+            <div class="estrellas">★★★★★</div>
+          </div>
+        </div>
+        <p class="comentario-cliente">"Excelente atención y productos 100% orgánicos. Saber que estoy dándole comida limpia y sin pesticidas a mis hijos no tiene precio."</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SECCIÓN DE DESPEDIDA Y RECOMENDACIÓN -->
+  <section class="seccion-despedida">
+    <div class="caja-despedida">
+      <h3>¡Sembrando un Futuro Mejor! 🌱</h3>
+      <p class="texto-futuro">
+        Cada elección en tu mesa tiene el poder de transformar el mañana. Al preferir productos locales, orgánicos e hidropónicos, no solo cuidas tu salud y la de tu familia, sino que impulsas una agricultura sostenible que respeta la tierra. <strong>Cambiar el futuro empieza con las pequeñas decisiones de cada día.</strong>
+      </p>
+      <div class="tarjeta-recomendacion">
+        <span class="icono-destacado">💡</span>
+        <p><strong>Nuestra Recomendación:</strong> Conéctate con el origen de tus alimentos. Tómate el tiempo de disfrutar los sabores reales de la naturaleza, apoya el cultivo local y enseña a las futuras generaciones que comer sano es el primer paso para vivir mejor.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SISTEMA DE MODALES -->
 
   <!-- MODAL PRODUCTO 1 -->
   <input type="checkbox" id="modal-toggle-1" class="modal-state">
