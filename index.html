@@ -3,35 +3,40 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Innovapro Costa Viva | Frescura y Reseñas</title>
+  <title>Innovapro Costa Viva | Catálogo Completo</title>
   <link rel="stylesheet" href="style.ccs">
 </head>
 <body>
 
-  <!-- Logo insertado directamente desde la imagen que enviaste -->
+  <!-- Encabezado con tu imagen oficial -->
   <div class="logo-box">
     <img src="logo-oficial.jpg" alt="Innovapro Costa Viva Logo Oficial" class="logo-img">
   </div>
 
   <p class="slogan-principal">"Frescura que nace en nuestra tierra"</p>
 
-  <!-- Sección 1: Galería de Productos -->
-  <h2 class="titulo-seccion">Nuestras Hortalizas Cosechadas Hoy</h2>
+  <!-- Catálogo de Oferta de Productos -->
+  <h2 class="titulo-seccion">Lo Que Te Ofrecemos Cosechado Hoy</h2>
   
   <main class="galeria-productos">
     
+    <!-- Producto 1 -->
     <div class="tarjeta-producto">
       <span class="etiqueta">Familia Feliz</span>
       <div class="contenedor-img">
-        <img src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=500&q=80" alt="Familia comiendo ensalada">
+        <img src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=500&q=80" alt="Ensalada Mixta">
       </div>
       <div class="info-producto">
         <h3>Ensalada Mixta Familiar</h3>
         <p>Hortalizas crujientes para compartir en la mesa.</p>
-        <a href="https://wa.me/50583886135?text=Hola,%20quiero%20pedir%20Ensalada%20Mixta" target="_blank" class="btn-comprar">Comprar</a>
+        <div class="acciones-tarjeta">
+          <button class="btn-detalle" onclick="abrirModal('Ensalada Mixta Familiar', 'Caja mixta de lechuga hidroponica, tomates cherry, pepino y espinacas.', 'C$ 120.00 / Paquete', '100% Orgánica, libre de pesticidas, cosechada al amanecer.')">Ver Detalle</button>
+          <a href="https://wa.me/50512345678?text=Hola,%20quiero%20pedir%20Ensalada%20Mixta" target="_blank" class="btn-comprar">Comprar</a>
+        </div>
       </div>
     </div>
 
+    <!-- Producto 2 -->
     <div class="tarjeta-producto destacada">
       <span class="etiqueta top">¡Más Vendido!</span>
       <div class="contenedor-img">
@@ -40,85 +45,80 @@
       <div class="info-producto">
         <h3>Tomates Premium</h3>
         <p>Jugosos, rojos y 100% orgánicos.</p>
-        <a href="https://wa.me/50583886135?text=Hola,%20quiero%20pedir%20Tomates%20Premium" target="_blank" class="btn-comprar">Comprar</a>
+        <div class="acciones-tarjeta">
+          <button class="btn-detalle" onclick="abrirModal('Tomates Premium', 'Tomates de ensalada seleccionados uno a uno por su madurez óptima.', 'C$ 45.00 / Libra', 'Calidad de exportación, textura firme y sabor intenso.')">Ver Detalle</button>
+          <a href="https://wa.me/50512345678?text=Hola,%20quiero%20pedir%20Tomates%20Premium" target="_blank" class="btn-comprar">Comprar</a>
+        </div>
       </div>
     </div>
 
+    <!-- Producto 3 -->
     <div class="tarjeta-producto">
       <span class="etiqueta">Vida Sana</span>
       <div class="contenedor-img">
-        <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=500&q=80" alt="Mujer comiendo tazón vegetal">
+        <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=500&q=80" alt="Bowl Nutritivo">
       </div>
       <div class="info-producto">
         <h3>Bowl Nutritivo</h3>
         <p>Hojas verdes preparadas para tu día.</p>
-        <a href="https://wa.me/50583886135?text=Hola,%20quiero%20pedir%20Bowl%20Nutritivo" target="_blank" class="btn-comprar">Comprar</a>
+        <div class="acciones-tarjeta">
+          <button class="btn-detalle" onclick="abrirModal('Bowl Nutritivo', 'Mezcla verde lista para consumir (Espinaca, Kale, Arugula y Berros).', 'C$ 95.00 / Porción', 'Selección súper fresca, lavada con agua purificada.')">Ver Detalle</button>
+          <a href="https://wa.me/50512345678?text=Hola,%20quiero%20pedir%20Bowl%20Nutritivo" target="_blank" class="btn-comprar">Comprar</a>
+        </div>
       </div>
     </div>
 
+    <!-- Producto 4 -->
     <div class="tarjeta-producto">
       <span class="etiqueta">100% Natural</span>
       <div class="contenedor-img">
-        <img src="https://images.unsplash.com/photo-1576045057995-568f588f82fb?auto=format&fit=crop&w=500&q=80" alt="Lechugas frescas">
+        <img src="https://images.unsplash.com/photo-1576045057995-568f588f82fb?auto=format&fit=crop&w=500&q=80" alt="Lechugas">
       </div>
       <div class="info-producto">
-        <h3>Lechugas Hidroponicas</h3>
+        <h3>Lechugas Hidropónicas</h3>
         <p>Frescura garantizada del cultivo.</p>
-        <a href="https://wa.me/50583886135?text=Hola,%20quiero%20pedir%20Lechugas" target="_blank" class="btn-comprar">Comprar</a>
+        <div class="acciones-tarjeta">
+          <button class="btn-detalle" onclick="abrirModal('Lechugas Hidropónicas', 'Lechuga crespa verde con raíz viva para mayor duración en casa.', 'C$ 35.00 / Unidad', 'Cero tierra, cultivo sostenible con agua de manantial.')">Ver Detalle</button>
+          <a href="https://wa.me/50512345678?text=Hola,%20quiero%20pedir%20Lechugas" target="_blank" class="btn-comprar">Comprar</a>
+        </div>
       </div>
     </div>
 
+    <!-- Producto 5 -->
     <div class="tarjeta-producto">
       <span class="etiqueta">Saludable</span>
       <div class="contenedor-img">
-        <img src="https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=500&q=80" alt="Plato con vegetales mixtos">
+        <img src="https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=500&q=80" alt="Mix de Verduras">
       </div>
       <div class="info-producto">
         <h3>Mix de Verduras</h3>
         <p>Directo del campo a tu cocina.</p>
-        <a href="https://wa.me/50583886135?text=Hola,%20quiero%20pedir%20Mix%20Verduras" target="_blank" class="btn-comprar">Comprar</a>
+        <div class="acciones-tarjeta">
+          <button class="btn-detalle" onclick="abrirModal('Mix de Verduras', 'Combinado de zanahoria, pipián, chiltoma y ayote enano.', 'C$ 80.00 / Bolsa 2lbs', 'Frescura de cultivo tradicional, sin químicos de maduración.')">Ver Detalle</button>
+          <a href="https://wa.me/50512345678?text=Hola,%20quiero%20pedir%20Mix%20Verduras" target="_blank" class="btn-comprar">Comprar</a>
+        </div>
       </div>
     </div>
 
+    <!-- Producto 6 -->
     <div class="tarjeta-producto">
       <span class="etiqueta">Recién Cortado</span>
       <div class="contenedor-img">
-        <img src="https://images.unsplash.com/photo-1566385101042-1a0aa0c1268c?auto=format&fit=crop&w=500&q=80" alt="Brócoli y vegetales verdes">
+        <img src="https://images.unsplash.com/photo-1566385101042-1a0aa0c1268c?auto=format&fit=crop&w=500&q=80" alt="Brócoli">
       </div>
       <div class="info-producto">
         <h3>Brócoli & Verdes</h3>
         <p>Ricos en vitaminas y antioxidantes.</p>
-        <a href="https://wa.me/50583886135?text=Hola,%20quiero%20pedir%20Brocoli" target="_blank" class="btn-comprar">Comprar</a>
-      </div>
-    </div>
-
-    <div class="tarjeta-producto">
-      <span class="etiqueta">Tradicional</span>
-      <div class="contenedor-img">
-        <img src="https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=500&q=80" alt="Papas y tubérculos">
-      </div>
-      <div class="info-producto">
-        <h3>Tubérculos Campestres</h3>
-        <p>Papas y raíces con sabor de hogar.</p>
-        <a href="https://wa.me/50583886135?text=Hola,%20quiero%20pedir%20Tuberculos" target="_blank" class="btn-comprar">Comprar</a>
-      </div>
-    </div>
-
-    <div class="tarjeta-producto">
-      <span class="etiqueta">Cosecha Especial</span>
-      <div class="contenedor-img">
-        <img src="https://images.unsplash.com/photo-1590779033100-9f60a05a013d?auto=format&fit=crop&w=500&q=80" alt="Zanahorias frescas">
-      </div>
-      <div class="info-producto">
-        <h3>Zanahorias Dulces</h3>
-        <p>Cosechadas con la humedad óptima.</p>
-        <a href="https://wa.me/50583886135?text=Hola,%20quiero%20pedir%20Zanahorias" target="_blank" class="btn-comprar">Comprar</a>
+        <div class="acciones-tarjeta">
+          <button class="btn-detalle" onclick="abrirModal('Brócoli & Verdes', 'Cabezas de brócoli denso y color verde intenso recién cortado.', 'C$ 40.00 / Unidad', 'Grado A, libre de imperfecciones o daño por plaga.')">Ver Detalle</button>
+          <a href="https://wa.me/50512345678?text=Hola,%20quiero%20pedir%20Brocoli" target="_blank" class="btn-comprar">Comprar</a>
+        </div>
       </div>
     </div>
 
   </main>
 
-  <!-- Sección 2: Reseñas y Comentarios de Clientes -->
+  <!-- Sección de Reseñas de Clientes -->
   <section class="seccion-resenas">
     <h2 class="titulo-seccion">Lo Que Dicen Nuestros Clientes</h2>
     <p class="subtitulo-resenas">Personas reales disfrutando del verdadero sabor del campo</p>
@@ -127,75 +127,48 @@
 
       <div class="tarjeta-resena">
         <div class="resena-cabecera">
-          <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=200&q=80" alt="Cliente Mariana G." class="foto-usuario">
+          <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=200&q=80" alt="Mariana G." class="foto-usuario">
           <div>
             <h4>Mariana Gutiérrez</h4>
             <div class="estrellas">★★★★★</div>
           </div>
         </div>
-        <p class="texto-resena">"La diferencia de sabor es increíble. Mis hijos ahora comen verduras sin protestar gracias al sabor tan fresco de los tomates y lechugas."</p>
+        <p class="texto-resena">"La diferencia de sabor es increíble. Mis hijos ahora comen verduras sin protestar gracias a la calidad de los tomates y lechugas."</p>
       </div>
 
       <div class="tarjeta-resena">
         <div class="resena-cabecera">
-          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80" alt="Cliente Carlos M." class="foto-usuario">
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80" alt="Carlos M." class="foto-usuario">
           <div>
             <h4>Carlos Mendoza</h4>
             <div class="estrellas">★★★★★</div>
           </div>
         </div>
-        <p class="texto-resena">"Hago mi pedido semanal por WhatsApp y llega súper rápido. Todo fresco, crujiente y de primera calidad. 100% recomendado."</p>
-      </div>
-
-      <div class="tarjeta-resena">
-        <div class="resena-cabecera">
-          <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=200&q=80" alt="Cliente Sofia L." class="foto-usuario">
-          <div>
-            <h4>Sofía López</h4>
-            <div class="estrellas">★★★★★</div>
-          </div>
-        </div>
-        <p class="texto-resena">"Como nutrióloga siempre busco lo mejor para mis comidas. Las hortalizas de Innovapro Costa Viva duran mucho más en la refrigeradora."</p>
-      </div>
-
-      <div class="tarjeta-resena">
-        <div class="resena-cabecera">
-          <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200&q=80" alt="Cliente Fernando R." class="foto-usuario">
-          <div>
-            <h4>Fernando Rivas</h4>
-            <div class="estrellas">★★★★★</div>
-          </div>
-        </div>
-        <p class="texto-resena">"El bowl de vegetales mixtos es infaltable en mi almuerzo post-entreno. Excelente atención y entrega puntual."</p>
-      </div>
-
-      <div class="tarjeta-resena">
-        <div class="resena-cabecera">
-          <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=200&q=80" alt="Cliente Elena V." class="foto-usuario">
-          <div>
-            <h4>Elena Valenzuela</h4>
-            <div class="estrellas">★★★★★</div>
-          </div>
-        </div>
-        <p class="texto-resena">"Preparar ensaladas en familia con estos productos es otra experiencia. El olor a tierra fresca al abrir el pedido lo dice todo."</p>
-      </div>
-
-      <div class="tarjeta-resena">
-        <div class="resena-cabecera">
-          <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=200&q=80" alt="Cliente Roberto S." class="foto-usuario">
-          <div>
-            <h4>Roberto Sevilla</h4>
-            <div class="estrellas">★★★★★</div>
-          </div>
-        </div>
-        <p class="texto-resena">"Comprar directo al productor local vale la pena. Productos de calidad prémium a precios muy justos."</p>
+        <p class="texto-resena">"Hago mi pedido semanal por WhatsApp y llega súper rápido. Todo fresco, crujiente y a precio justo. 100% recomendado."</p>
       </div>
 
     </div>
   </section>
 
+  <!-- Ventana Modal de Detalle (Pop-up Interactivo) -->
+  <div id="modalDetalle" class="modal-overlay">
+    <div class="modal-contenido">
+      <span class="btn-cerrar" onclick="cerrarModal()">&times;</span>
+      <h3 id="modalTitulo">Título del Producto</h3>
+      <hr class="linea-modal">
+      
+      <div class="modal-cuerpo">
+        <p><strong>Lo que te ofrecemos:</strong> <span id="modalOferta"></span></p>
+        <p><strong>Costo / Precio:</strong> <span id="modalCosto" class="precio-destacado"></span></p>
+        <p><strong>Garantía de Calidad:</strong> <span id="modalCalidad"></span></p>
+      </div>
+
+      <button class="btn-cerrar-modal" onclick="cerrarModal()">Entendido</button>
+    </div>
+  </div>
+
   <!-- Botón flotante de WhatsApp -->
-  <a href="https://wa.me/50583886135?text=Hola%20Innovapro%20Costa%20Viva,%20quiero%20hacer%20un%20pedido" class="btn-whatsapp" target="_blank">
+  <a href="https://wa.me/50512345678?text=Hola%20Innovapro%20Costa%20Viva,%20quiero%20hacer%20un%20pedido" class="btn-whatsapp" target="_blank">
     <svg viewBox="0 0 32 32"><path fill="#fff" d="M16 2a13 13 0 0 0-11.25 19.5L3 29l7.71-1.69A13 13 0 1 0 16 2zm0 23.8A10.8 10.8 0 0 1 10.5 24.3l-.4-.2-4.6 1 1-4.4-.2-.4A10.8 10.8 0 1 1 16 25.8zm5.9-8.1c-.3-.1-1.9-.9-2.2-1s-.5-.2-.7.2-.8 1-.9 1.2-.3.2-.6.1a8.2 8.2 0 0 1-2.4-1.5 9 9 0 0 1-1.7-2.1c-.2-.3 0-.4.1-.6l.4-.5c.1-.2.2-.3.3-.5a.4.4 0 0 0 0-.4c-.1-.1-.7-1.7-1-2.3-.2-.6-.5-.5-.7-.5h-.6a1.2 1.2 0 0 0-.9.4 3.7 3.7 0 0 0-1.1 2.8 6.4 6.4 0 0 0 1.3 3.4 14.6 14.6 0 0 0 5.6 4.9c2.3 1 2.8.8 3.3.8a2.8 2.8 0 0 0 1.9-1.3 2.3 2.3 0 0 0 .2-1.3c-.1-.2-.3-.3-.6-.4z"/></svg>
   </a>
 
@@ -203,6 +176,29 @@
   <footer class="pie-pagina">
     <p class="frase-motivacional">"Sembrar con amor y cultivar con dedicación es la clave para alimentar el futuro de nuestras familias."</p>
   </footer>
+
+  <!-- Código JavaScript para que el botón de Detalle funcione -->
+  <script>
+    function abrirModal(nombre, oferta, costo, calidad) {
+      document.getElementById('modalTitulo').innerText = nombre;
+      document.getElementById('modalOferta').innerText = oferta;
+      document.getElementById('modalCosto').innerText = costo;
+      document.getElementById('modalCalidad').innerText = calidad;
+      document.getElementById('modalDetalle').style.display = 'flex';
+    }
+
+    function cerrarModal() {
+      document.getElementById('modalDetalle').style.display = 'none';
+    }
+
+    // Cerrar al hacer clic fuera del recuadro
+    window.onclick = function(event) {
+      var modal = document.getElementById('modalDetalle');
+      if (event.target == modal) {
+        modal.style.display = 'none';
+      }
+    }
+  </script>
 
 </body>
 </html>
