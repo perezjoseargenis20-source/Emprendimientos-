@@ -3,129 +3,281 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hortalizas Frescas | Del Campo a tu Mesa</title>
-    <link rel="stylesheet" href="style.css">
+    <title>InnovaPro Costa Viva | Frescura que nace en nuestra tierra</title>
+    <link rel="stylesheet" href="style.ccs">
     <!-- Fuentes de Google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Playfair+Display:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
     <!-- Iconos de FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
-    <!-- Navegación -->
+    <!-- Encabezado / Navegación -->
     <header class="header">
         <div class="nav-container">
             <a href="#" class="logo">
-                <i class="fa-solid fa-seedling"></i>
-                <span>Hortalizas<b>Frescas</b></span>
+                <i class="fa-solid fa-leaf"></i>
+                <div class="logo-text">
+                    <span class="brand-name">InnovaPro</span>
+                    <span class="brand-sub">COSTA VIVA</span>
+                </div>
             </a>
             <nav class="nav-menu">
                 <a href="#inicio">Inicio</a>
                 <a href="#nosotros">Nosotros</a>
                 <a href="#productos">Productos</a>
-                <a href="#contacto" class="btn-nav">Pedir Ahora</a>
+                <a href="https://wa.me/50583886135?text=Hola%20InnovaPro%20Costa%20Viva,%20quisiera%20hacer%20un%20pedido" target="_blank" class="btn-nav">
+                    <i class="fa-brands fa-whatsapp"></i> Pedir Ahora
+                </a>
             </nav>
         </div>
     </header>
 
-    <!-- Sección Principal / Hero -->
+    <!-- Hero / Banner Principal -->
     <section id="inicio" class="hero">
         <div class="hero-overlay"></div>
         <div class="hero-content">
-            <span class="badge">100% Orgánico y Natural</span>
-            <h1>Cosecha fresca directamente a tu hogar</h1>
-            <p>Cultivamos con amor y dedicación las mejores hortalizas, garantizando sabor, nutrición y máxima frescura en cada entrega.</p>
+            <span class="badge"><i class="fa-solid fa-seedling"></i> Producción Sostenible</span>
+            <h1>Frescura que nace en nuestra tierra</h1>
+            <p>Cultivamos y distribuimos hortalizas de primera calidad, cosechadas con dedicación para llevar lo más nutritivo y natural directamente a tu hogar o negocio.</p>
             <div class="hero-buttons">
-                <a href="https://wa.me/50583886135?text=Hola,%20me%20gustaría%20realizar%20un%20pedido%20de%20hortalizas" target="_blank" class="btn btn-primary">
-                    <i class="fa-brands fa-whatsapp"></i> Hacer Pedido
+                <a href="https://wa.me/50583886135?text=Hola%20InnovaPro%20Costa%20Viva,%20deseo%20hacer%20un%20pedido%20de%20hortalizas" target="_blank" class="btn btn-primary">
+                    <i class="fa-brands fa-whatsapp"></i> Realizar Pedido
                 </a>
-                <a href="#productos" class="btn btn-secondary">Ver Catálogo</a>
+                <a href="#productos" class="btn btn-secondary">Ver Hortalizas</a>
             </div>
         </div>
     </section>
 
-    <!-- Ventajas / Beneficios -->
-    <section class="features">
-        <div class="container feature-grid">
+    <!-- Beneficios -->
+    <section class="features container">
+        <div class="feature-grid">
             <div class="feature-card">
-                <i class="fa-solid fa-leaf"></i>
-                <h3>Sin Químicos</h3>
-                <p>Cultivo sostenible sin pesticidas ni fertilizantes artificiales.</p>
+                <div class="icon-box"><i class="fa-solid fa-tractor"></i></div>
+                <h3>Cosecha Fresca</h3>
+                <p>Seleccionadas directamente del campo para conservar su textura y valor nutricional intactos.</p>
             </div>
             <div class="feature-card">
-                <i class="fa-solid fa-truck-fast"></i>
-                <h3>Entrega Rápida</h3>
-                <p>Cosechamos el mismo día de la entrega para máxima frescura.</p>
+                <div class="icon-box"><i class="fa-solid fa-shield-halved"></i></div>
+                <h3>100% Calidad Garantizada</h3>
+                <p>Manejo higiénico y riguroso control de calidad en cada hortaliza cosechada.</p>
             </div>
             <div class="feature-card">
-                <i class="fa-solid fa-hand-holding-heart"></i>
-                <h3>Calidad Garantizada</h3>
-                <p>Seleccionamos cuidadosamente cada pieza para tu familia.</p>
+                <div class="icon-box"><i class="fa-solid fa-truck-ramp-box"></i></div>
+                <h3>Entrega Directa</h3>
+                <p>Atención directa y rápida en Nicaragua a través de contacto inmediato por WhatsApp.</p>
             </div>
         </div>
     </section>
 
-    <!-- Productos -->
-    <section id="productos" class="products container">
-        <div class="section-title">
-            <h2>Nuestra Cosecha Del Día</h2>
-            <p>Descubre la variedad de productos frescos listos para tu cocina</p>
+    <!-- Sección Sobre Nosotros -->
+    <section id="nosotros" class="about container">
+        <div class="about-grid">
+            <div class="about-image">
+                <img src="https://static.vecteezy.com/system/resources/previews/074/818/217/large_2x/fresh-organic-farm-produce-is-being-harvested-with-care-as-hands-gently-pick-vibrant-green-lettuce-leaves-showcasing-beauty-of-sustainable-agriculture-and-healthy-living-photo.jpeg" alt="Cosecha de hortalizas frescas InnovaPro Costa Viva">
+            </div>
+            <div class="about-text">
+                <span class="sub-title">Nuestra Tierra, Tu Nutrición</span>
+                <h2>InnovaPro Costa Viva</h2>
+                <p>En <strong>InnovaPro Costa Viva</strong> nos motiva el compromiso con nuestra tierra y nuestras familias. Trabajamos día a día cultivando con métodos responsables para entregar vegetales crujientes, vivos y llenos de sabor natural.</p>
+                <div class="about-checklist">
+                    <div><i class="fa-solid fa-circle-check"></i> Hortalizas seleccionadas a mano</div>
+                    <div><i class="fa-solid fa-circle-check"></i> Sin intermediarios innecesarios</div>
+                    <div><i class="fa-solid fa-circle-check"></i> Compromiso con la producción local</div>
+                </div>
+            </div>
         </div>
-        <div class="product-grid">
-            <div class="product-card">
-                <div class="product-img img-tomates"></div>
-                <div class="product-info">
-                    <h3>Tomates Orgánicos</h3>
-                    <p>Jugosos, firmes y llenos de sabor natural.</p>
-                    <a href="https://wa.me/50583886135?text=Hola,%20quiero%20consultar%20por%20los%20Tomates%20Orgánicos" class="btn-product" target="_blank">Consultar</a>
-                </div>
+    </section>
+
+    <!-- Catálogo de Productos con Tarjetas Giratorias (180°) -->
+    <section id="productos" class="products-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nuestras Hortalizas Destacadas</h2>
+                <p>Pasa el cursor sobre la tarjeta o presiona "Ver Detalles" para girarla y descubrir sus beneficios</p>
             </div>
-            <div class="product-card">
-                <div class="product-img img-lechuga"></div>
-                <div class="product-info">
-                    <h3>Lechuga Fresca</h3>
-                    <p>Crujiente, lavada y lista para preparar saludables ensaladas.</p>
-                    <a href="https://wa.me/50583886135?text=Hola,%20quiero%20consultar%20por%20la%20Lechuga%20Fresca" class="btn-product" target="_blank">Consultar</a>
+            
+            <div class="product-grid">
+                
+                <!-- Tarjeta 1: Tomates -->
+                <div class="flip-card" tabindex="0">
+                    <div class="flip-card-inner">
+                        <!-- CARA FRONTAL -->
+                        <div class="flip-card-front">
+                            <div class="product-img-wrap">
+                                <img src="https://drearth.com/wp-content/uploads/tomato-iStock-174932787.jpg" alt="Tomates Rojos">
+                            </div>
+                            <div class="product-details">
+                                <span class="category">Hortaliza de Fruto</span>
+                                <h3>Tomates Rojos Seleccionados</h3>
+                                <p>Jugosos, firmes y de intenso color. Ideales para ensaladas, salsas y guisos.</p>
+                                <button class="btn-flip-trigger" type="button">
+                                    <i class="fa-solid fa-rotate"></i> Ver Detalles
+                                </button>
+                            </div>
+                        </div>
+                        <!-- CARA POSTERIOR (GIRADA 180 GRADOS) -->
+                        <div class="flip-card-back">
+                            <div class="back-header">
+                                <img src="https://drearth.com/wp-content/uploads/tomato-iStock-174932787.jpg" alt="Tomates Thumbnail" class="back-thumb">
+                                <div>
+                                    <span class="category-back">Detalles del Cultivo</span>
+                                    <h4>Tomate Rojo Premium</h4>
+                                </div>
+                            </div>
+                            <div class="back-body">
+                                <p class="detail-text">Rico en licopeno, un potente antioxidante natural, además de vitaminas A, C y K. Cosechado en el punto óptimo de maduración para conservar su dulzura natural.</p>
+                                <ul class="spec-list">
+                                    <li><i class="fa-solid fa-check"></i> <strong>Origen:</strong> Tierra Nicaragüense</li>
+                                    <li><i class="fa-solid fa-check"></i> <strong>Conservación:</strong> 7 a 10 días frescos</li>
+                                </ul>
+                            </div>
+                            <div class="back-footer">
+                                <a href="https://wa.me/50583886135?text=Hola%20InnovaPro%20Costa%20Viva,%20quiero%20pedir%20Tomates%20Rojos" target="_blank" class="btn-card-order">
+                                    <i class="fa-brands fa-whatsapp"></i> Pedir por WhatsApp
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="product-card">
-                <div class="product-img img-zanahoria"></div>
-                <div class="product-info">
-                    <h3>Zanahorias Dulces</h3>
-                    <p>Ricas en vitaminas, ideales para jugos o cocina diaria.</p>
-                    <a href="https://wa.me/50583886135?text=Hola,%20quiero%20consultar%20por%20las%20Zanahorias" class="btn-product" target="_blank">Consultar</a>
+
+                <!-- Tarjeta 2: Zanahorias -->
+                <div class="flip-card" tabindex="0">
+                    <div class="flip-card-inner">
+                        <!-- CARA FRONTAL -->
+                        <div class="flip-card-front">
+                            <div class="product-img-wrap">
+                                <img src="https://tiimg.tistatic.com/fp/1/007/119/healthy-and-natural-organic-fresh-carrot-191.jpg" alt="Zanahorias de Campo">
+                            </div>
+                            <div class="product-details">
+                                <span class="category">Raíces Frescas</span>
+                                <h3>Zanahorias Crocantes</h3>
+                                <p>Directo del suelo a tu mesa. Dulces y de textura crujiente insuperable.</p>
+                                <button class="btn-flip-trigger" type="button">
+                                    <i class="fa-solid fa-rotate"></i> Ver Detalles
+                                </button>
+                            </div>
+                        </div>
+                        <!-- CARA POSTERIOR (GIRADA 180 GRADOS) -->
+                        <div class="flip-card-back">
+                            <div class="back-header">
+                                <img src="https://tiimg.tistatic.com/fp/1/007/119/healthy-and-natural-organic-fresh-carrot-191.jpg" alt="Zanahorias Thumbnail" class="back-thumb">
+                                <div>
+                                    <span class="category-back">Detalles del Cultivo</span>
+                                    <h4>Zanahorias Orgánicas</h4>
+                                </div>
+                            </div>
+                            <div class="back-body">
+                                <p class="detail-text">Excelente fuente de betacaroteno, potasio y fibra. Ayudan a la salud visual y fortalecen el sistema inmunológico. Ideales para jugos naturales y ensaladas.</p>
+                                <ul class="spec-list">
+                                    <li><i class="fa-solid fa-check"></i> <strong>Cosecha:</strong> Selección diaria</li>
+                                    <li><i class="fa-solid fa-check"></i> <strong>Textura:</strong> 100% Crocante</li>
+                                </ul>
+                            </div>
+                            <div class="back-footer">
+                                <a href="https://wa.me/50583886135?text=Hola%20InnovaPro%20Costa%20Viva,%20quiero%20pedir%20Zanahorias" target="_blank" class="btn-card-order">
+                                    <i class="fa-brands fa-whatsapp"></i> Pedir por WhatsApp
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+
+                <!-- Tarjeta 3: Pimientos -->
+                <div class="flip-card" tabindex="0">
+                    <div class="flip-card-inner">
+                        <!-- CARA FRONTAL -->
+                        <div class="flip-card-front">
+                            <div class="product-img-wrap">
+                                <img src="https://www.melissas.com/cdn/shop/files/image-of-organic-bell-peppers-vegetables-1125637755_600x600.jpg?v=1770322071" alt="Chiltomas y Pimientos">
+                            </div>
+                            <div class="product-details">
+                                <span class="category">Hortaliza de Fruto</span>
+                                <h3>Chiltomas y Pimientos</h3>
+                                <p>Variedad de chiltomas de intenso aroma y sabor para realzar tus platillos.</p>
+                                <button class="btn-flip-trigger" type="button">
+                                    <i class="fa-solid fa-rotate"></i> Ver Detalles
+                                </button>
+                            </div>
+                        </div>
+                        <!-- CARA POSTERIOR (GIRADA 180 GRADOS) -->
+                        <div class="flip-card-back">
+                            <div class="back-header">
+                                <img src="https://www.melissas.com/cdn/shop/files/image-of-organic-bell-peppers-vegetables-1125637755_600x600.jpg?v=1770322071" alt="Pimientos Thumbnail" class="back-thumb">
+                                <div>
+                                    <span class="category-back">Detalles del Cultivo</span>
+                                    <h4>Chiltoma y Pimiento Fresco</h4>
+                                </div>
+                            </div>
+                            <div class="back-body">
+                                <p class="detail-text">Aportan un toque aromático y dulce a tus recetas. Contienen altos niveles de Vitamina C y antioxidantes que protegen la salud cardiovascular.</p>
+                                <ul class="spec-list">
+                                    <li><i class="fa-solid fa-check"></i> <strong>Calidad:</strong> Clasificados a mano</li>
+                                    <li><i class="fa-solid fa-check"></i> <strong>Uso:</strong> Guisos, asados y sofritos</li>
+                                </ul>
+                            </div>
+                            <div class="back-footer">
+                                <a href="https://wa.me/50583886135?text=Hola%20InnovaPro%20Costa%20Viva,%20quiero%20pedir%20Pimientos" target="_blank" class="btn-card-order">
+                                    <i class="fa-brands fa-whatsapp"></i> Pedir por WhatsApp
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
 
     <!-- Botón Flotante de WhatsApp -->
-    <a href="https://wa.me/50583886135?text=Hola,%20quisiera%20más%20información%20sobre%20sus%20hortalizas" class="whatsapp-float" target="_blank" title="Contactar por WhatsApp">
+    <a href="https://wa.me/50583886135?text=Hola%20InnovaPro%20Costa%20Viva,%20deseo%20más%20información" class="whatsapp-float" target="_blank" aria-label="Contacto por WhatsApp">
         <i class="fa-brands fa-whatsapp"></i>
+        <span class="tooltip">¡Chatea con nosotros!</span>
     </a>
 
     <!-- Pie de Página / Footer -->
-    <footer id="contacto" class="footer">
-        <div class="container footer-content">
-            <div class="footer-brand">
-                <h2><i class="fa-solid fa-seedling"></i> Hortalizas Frescas</h2>
-                <blockquote class="motivational-phrase">
-                    "Sembrar con paciencia, cultivar con amor y cosechar con gratitud: el secreto de lo bueno y lo natural."
-                </blockquote>
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-info">
+                <div class="logo footer-logo">
+                    <i class="fa-solid fa-leaf"></i>
+                    <div class="logo-text">
+                        <span class="brand-name">InnovaPro</span>
+                        <span class="brand-sub">COSTA VIVA</span>
+                    </div>
+                </div>
+                <p class="tagline">Frescura que nace en nuestra tierra.</p>
+                <div class="contact-item">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>+505 8388 6135</span>
+                </div>
             </div>
-            <div class="footer-contact">
-                <h3>Contacto Directo</h3>
-                <p><i class="fa-solid fa-location-dot"></i> Nicaragua</p>
-                <p><i class="fa-solid fa-phone"></i> +505 8388 6135</p>
-                <a href="https://wa.me/50583886135?text=Hola,%20deseo%20hacer%20un%20pedido" target="_blank" class="btn-whatsapp-footer">
-                    <i class="fa-brands fa-whatsapp"></i> Escríbenos por WhatsApp
+
+            <!-- Frase Motivacional Personal -->
+            <div class="footer-quote-box">
+                <i class="fa-solid fa-quote-left quote-icon"></i>
+                <blockquote class="motivational-quote">
+                    "Sembrar con paciencia, cuidar con entrega y cosechar con pasión: el fruto de nuestro esfuerzo es la vida sana que compartimos con el mundo."
+                </blockquote>
+                <span class="quote-author">— InnovaPro Costa Viva</span>
+            </div>
+
+            <!-- Acción de contacto -->
+            <div class="footer-cta">
+                <h3>¿Listo para ordenar?</h3>
+                <p>Haz tu pedido hoy y recibe hortalizas frescas en la puerta de tu hogar.</p>
+                <a href="https://wa.me/50583886135?text=Hola%20InnovaPro%20Costa%20Viva,%20quiero%20realizar%20un%20pedido" target="_blank" class="btn-whatsapp-footer">
+                    <i class="fa-brands fa-whatsapp"></i> Escríbenos al +505 8388 6135
                 </a>
             </div>
         </div>
+
         <div class="footer-bottom">
-            <p>&copy; 2026 Hortalizas Frescas - Todos los derechos reservados.</p>
+            <div class="container">
+                <p>&copy; 2026 InnovaPro Costa Viva. Todos los derechos reservados. | Hortalizas Frescas Nicaragua</p>
+            </div>
         </div>
     </footer>
 
